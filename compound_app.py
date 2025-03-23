@@ -4,11 +4,11 @@ import streamlit as st
 st.title("COMPOUND INTEREST CALCULATOR")
 
 # Input fields
-initial = st.number_input("Initial investment amount ($)", min_value=0.0, value=1000.0, step=100.0)
-monthly = st.number_input("Monthly contribution ($)", min_value=0.0, value=100.0, step=10.0)
-years = st.number_input("Number of years", min_value=1, value=10, step=1)
-interest = st.number_input("Expected annual interest rate (%)", min_value=0.0, value=8.0, step=0.1)
-range_offset = st.number_input("Interest range (+/- %, e.g. 2)", min_value=0.0, value=2.0, step=0.1)
+initial = st.number_input("Initial investment amount ($)", min_value=0.0, value=0.0, step=100.0)
+monthly = st.number_input("Monthly contribution ($)", min_value=0.0, value=0.0, step=10.0)
+years = st.number_input("Number of years", min_value=1, value=1, step=1)
+interest = st.number_input("Expected annual interest rate (%)", min_value=0.0, value=0.0, step=0.1)
+range_offset = st.number_input("Interest range (+/- %, e.g. 2)", min_value=0.0, value=0.0, step=0.1)
 
 # Button to calculate
 if st.button("Calculate"):
